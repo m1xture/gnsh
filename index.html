@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Genshin Guides</title>
+    <link href="https://fonts.cdnfonts.com/css/hywenhei" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -12,6 +13,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- Header -->
@@ -29,7 +31,9 @@
             <li class="header__item">
               <a href="/" class="header__link">Download</a>
             </li>
-            <li class="header__item"><img src="/" alt="genshin-logotype" /></li>
+            <li class="header__item">
+              <img src="./images/genshin-logotype.png" alt="genshin-logotype" />
+            </li>
             <li class="header__item">
               <a href="/" class="header__link">Characters</a>
             </li>
@@ -49,9 +53,12 @@
     <section class="hero">
       <div class="container">
         <div class="hero__block">
-          <h1 class="hero__title"></h1>
-          <p class="hero__text"></p>
-          <button class="hero__button"></button>
+          <h1 class="hero__title">Welcome To Teyvat</h1>
+          <p class="hero__text">
+            Genshin Impact is miHoYo's first ever open-world game, where beliefs
+            in "The Seven" converge in the fantasy world of Teyvat.
+          </p>
+          <button class="hero__button">View More</button>
         </div>
       </div>
     </section>
@@ -61,25 +68,43 @@
     <footer class="footer">
       <div class="container">
         <h2 class="footer__title">About</h2>
-        <div class="footer-block-imgs">
-          <img src="/" alt="genshin-logotype" />
-          <img src="/" alt="mihoyo-logotype" />
+        <div class="footer-main-block">
+          <div class="footer-block-imgs">
+            <ul class="footer-img__list">
+              <li class="footer-img__item">
+                <img
+                  src="./images/genshin-logotype.png"
+                  alt="genshin-logotype"
+                  class="footer__logo"
+                />
+              </li>
+              <li class="footer-img__item">
+                <img src="./images/mihoyo-logotype.png" alt="mihoyo-logotype" />
+              </li>
+            </ul>
+          </div>
+          <div class="footer-text-bolck">
+            <h3 class="footer__subtitle">
+              Copyright © 2020 miHoYo All Rights Reserved
+            </h3>
+            <p class="footer__text">
+              "PlayStation Family Mark" and "PS4 logo" are registered trademarks
+              or trademarks of Sony Interactive Entertainment Inc.
+            </p>
+          </div>
         </div>
         <div class="footer-formal-block">
           <ul class="footer__list">
-            <li class="footer__item"><a href="/" class="footer__link"></a></li>
-            <li class="footer__item"><a href="/" class="footer__link"></a></li>
-            <li class="footer__item"><a href="/" class="footer__link"></a></li>
+            <li class="footer__item">
+              <a href="/" class="footer__link">Privacy Policy</a>
+            </li>
+            <li class="footer__item">
+              <a href="/" class="footer__link">Terms of Service</a>
+            </li>
+            <li class="footer__item">
+              <a href="/" class="footer__link">Contact Us</a>
+            </li>
           </ul>
-        </div>
-        <div class="footer-text-bolck">
-          <h3 class="footer__subtitle">
-            Copyright © 2020 miHoYo All Rights Reserved
-          </h3>
-          <p class="footer__text">
-            "PlayStation Family Mark" and "PS4 logo" are registered trademarks
-            or trademarks of Sony Interactive Entertainment Inc.
-          </p>
         </div>
       </div>
     </footer>

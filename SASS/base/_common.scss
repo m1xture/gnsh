@@ -1,0 +1,19 @@
+html {
+   scroll-behavior: smooth;
+}
+body {
+  font-family: "HYWenHei";
+}
+button {
+  cursor: pointer;
+  transition-duration: 250ms;
+  transition-delay: 50ms;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+.container {
+  width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}

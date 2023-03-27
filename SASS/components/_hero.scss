@@ -1,0 +1,22 @@
+.hero {
+  position: relative;
+  background-image: url(../../images/hero-background.jpg);
+  background-size: cover;
+  padding-top: 383px;
+  padding-bottom: 396px;
+}
+.hero__title {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 78px;
+  color: $main-text-color;
+}
+.hero__text {
+    @extend %main-text;
+    width: 646px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+.hero__button {
+    @include btn;
+}

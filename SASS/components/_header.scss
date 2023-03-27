@@ -1,0 +1,25 @@
+.header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+}
+.header__nav {
+    display: block;
+    padding-top: 38px;
+}
+.header__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__item {
+    margin-right: 60px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.header__link {
+    @extend %main-text;
+}
