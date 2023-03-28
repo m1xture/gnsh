@@ -1,4 +1,4 @@
-.hero__text, .header__link {
+.slider__text, .hero__text, .header__link {
   font-family: "HYWenHei";
   font-style: normal;
   font-weight: 400;
@@ -165,19 +165,222 @@ button:hover {
   background-color: #EFEAE2;
 }
 
-.footer {
+.news {
+  padding-top: 171px;
+  padding-bottom: 885px;
+  position: relative;
+  background-image: url(../../images/news-back.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+}
+.news::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.news__title {
+  font-weight: 400;
+  font-size: 36px;
+  position: relative;
+  line-height: 44px;
+  color: #EFEAE2;
+  padding-left: 45px;
+}
+.news__title::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 40px;
+  background-image: url(../../images/svg/footer-icon.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0px;
+}
+
+.slider {
+  width: 1540px;
+  height: 700px;
+}
+
+.middle {
+  position: absolute;
+  bottom: -175px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.navigation {
+  position: absolute;
+  bottom: -133px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bar {
+  width: 20px;
+  height: 20px;
+  margin: 6px;
+  cursor: pointer;
+  background-color: #EFEAE2;
+  opacity: 0.5;
+  border-radius: 50%;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.bar:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+input[name=r] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides {
+  width: 400%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slide {
+  width: 25%;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  position: relative;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+#r1:checked ~ .s1 {
+  margin-left: 0;
+}
+
+#r2:checked ~ .s1 {
+  margin-left: -25%;
+}
+
+#r3:checked ~ .s1 {
+  margin-left: -50%;
+}
+
+#r4:checked ~ .s1 {
+  margin-left: -75%;
+}
+
+.slider-block {
+  position: absolute;
+  top: 35px;
+  right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider__text {
+  display: block;
+}
+
+.slider__btn {
+  width: 250px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  font-family: "HYWenHei";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #3C3537;
+  background-color: #EFEAE2;
+  margin-top: 450px;
+  display: block;
+  margin-left: 200px;
+}
+
+.footer {
+  background-image: url(../../images/footer-back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 41px;
   padding-bottom: 69px;
-  background-color: #000;
+  position: relative;
+}
+.footer::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.footer .container {
+  position: absolute;
+  position: relative;
 }
 
 .footer__title {
   font-weight: 400;
   font-size: 36px;
+  position: relative;
   line-height: 44px;
   color: #EFEAE2;
+}
+.footer__title::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 40px;
+  background-image: url(../../images/svg/footer-icon.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -45px;
 }
 
 .footer-main-block {
